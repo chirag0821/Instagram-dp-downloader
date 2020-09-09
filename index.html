@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaDP</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="ajax.js"></script>
+<style>
+    .container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        /* grid-template-columns: 600px; */
+        grid-template-columns: repeat(1, minmax(10px, 600px));
+        grid-template-rows: 100px 280px 40px 80px 306px;
+        position: relative;
+        top: 60px;
+        height: 500px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: bold;
+        font-size: 25px;
+        /* grid-gap: 2rem; */
+    }
+
+    section {
+        /* border:2px solid black; */
+        text-align: center;
+
+    }
+
+    img {
+        margin: 0px 0px;
+        /* box-shadow: 1px 1px 800px black; */
+    }
+
+    input {
+        height: 30px;
+        margin: 0px auto;
+        border: 1px solid black;
+        width: 550px;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        box-shadow: 1px 1px 15px blue;
+        outline: none;
+
+    }
+
+    @media (max-width:500px) {
+        input {
+            width: 300px;
+        }
+    }
+
+    button {
+        height: 40px;
+        width: 70px;
+        outline: none;
+        background-color: white;
+        border: 1px solid black;
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        border-radius: 5px;
+        margin: -25px 0px;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.801);
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h2>Instagram Profile Photo Downloader</h2>
+        </section>
+        <section>
+            <img src="insta3.svg" alt="" height="350" width="300">
+        </section>
+        <section>
+            <input type="text" id="username" placeholder="Enter Username">
+        </section>
+        <section>
+            <button class="btn btn-outline-dark rounded" id="download" onclick="download_image()">view</button>
+        </section>
+        <section>
+            <img src="" alt="" id="image" class="img-fluid mt-4 text-center" style="width: 300px;margin:80px auto;display: block;">
+        </section>
+    </div>
+
+
+   
+</body>
+
+</html>
